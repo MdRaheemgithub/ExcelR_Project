@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="3" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-19T11:43:23 IST" name="Smoke groups" finished-at="2024-07-19T11:46:40 IST" duration-ms="196623">
+    <groups>
+      <group name="Smoke">
+        <method signature="groups.AddToCart()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" name="AddToCart" class="group_Of_TestCases.groups"/>
+        <method signature="groups.SearchBox_Functionality()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" name="SearchBox_Functionality" class="group_Of_TestCases.groups"/>
+        <method signature="groups.VerifyHomePageLoads()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" name="VerifyHomePageLoads" class="group_Of_TestCases.groups"/>
+        <method signature="groups.VerifyProductDetailsPage()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" name="VerifyProductDetailsPage" class="group_Of_TestCases.groups"/>
+        <method signature="groups.ViewCartTest()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" name="ViewCartTest" class="group_Of_TestCases.groups"/>
+        <method signature="groups.verifyProceedToCheckout()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" name="verifyProceedToCheckout" class="group_Of_TestCases.groups"/>
+      </group> <!-- Smoke -->
+      <group name="Test Cases">
+        <method signature="groups.AddToCart()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" name="AddToCart" class="group_Of_TestCases.groups"/>
+        <method signature="groups.SearchBox_Functionality()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" name="SearchBox_Functionality" class="group_Of_TestCases.groups"/>
+        <method signature="groups.VerifyHomePageLoads()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" name="VerifyHomePageLoads" class="group_Of_TestCases.groups"/>
+        <method signature="groups.VerifyProductDetailsPage()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" name="VerifyProductDetailsPage" class="group_Of_TestCases.groups"/>
+        <method signature="groups.ViewCartTest()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" name="ViewCartTest" class="group_Of_TestCases.groups"/>
+        <method signature="groups.verifyProceedToCheckout()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" name="verifyProceedToCheckout" class="group_Of_TestCases.groups"/>
+      </group> <!-- Test Cases -->
+    </groups>
+    <test started-at="2024-07-19T11:43:23 IST" name="Test" finished-at="2024-07-19T11:46:40 IST" duration-ms="196623">
+      <class name="group_Of_TestCases.groups">
+        <test-method is-config="true" signature="Browser_Setup()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" started-at="2024-07-19T11:43:12 IST" name="Browser_Setup" finished-at="2024-07-19T11:43:23 IST" duration-ms="10968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browser_Setup -->
+        <test-method signature="AddToCart()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" started-at="2024-07-19T11:43:23 IST" name="AddToCart" finished-at="2024-07-19T11:44:04 IST" duration-ms="40607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCart -->
+        <test-method signature="SearchBox_Functionality()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" started-at="2024-07-19T11:44:04 IST" name="SearchBox_Functionality" finished-at="2024-07-19T11:44:15 IST" duration-ms="11369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchBox_Functionality -->
+        <test-method signature="VerifyHomePageLoads()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" started-at="2024-07-19T11:44:15 IST" name="VerifyHomePageLoads" finished-at="2024-07-19T11:44:16 IST" duration-ms="206" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at group_Of_TestCases.groups.VerifyHomePageLoads(groups.java:82)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHomePageLoads -->
+        <test-method signature="VerifyProductDetailsPage()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" started-at="2024-07-19T11:44:16 IST" name="VerifyProductDetailsPage" finished-at="2024-07-19T11:44:38 IST" duration-ms="22072" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at group_Of_TestCases.groups.VerifyProductDetailsPage(groups.java:383)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyProductDetailsPage -->
+        <test-method signature="ViewCartTest()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" started-at="2024-07-19T11:44:38 IST" name="ViewCartTest" finished-at="2024-07-19T11:45:41 IST" duration-ms="63290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViewCartTest -->
+        <test-method signature="verifyProceedToCheckout()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" started-at="2024-07-19T11:45:41 IST" name="verifyProceedToCheckout" finished-at="2024-07-19T11:46:40 IST" duration-ms="58938" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to exception: element click intercepted: Element <button type="button" data-role="proceed-to-checkout" title="Proceed to Checkout" class="action primary checkout">...</button> is not clickable at point (1228, 609). Other element would receive the click: <div class="ea-content">...</div>
+  (Session info: chrome=126.0.6478.182)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0287ba3cf2499cb346c7184c1eb228a3, clickElement {id=f.A0A386F3048AF6B160C31000F885EB16.d.BFB2896C4C003C33CDA5AAA97703F2FC.e.1682}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.182, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\RAHEEM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51123/devtoo..., se:cdpVersion: 126.0.6478.182, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0287ba3cf2499cb346c7184c1eb228a3)] -> xpath: //button[@data-role='proceed-to-checkout']]
+Session ID: 0287ba3cf2499cb346c7184c1eb228a3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to exception: element click intercepted: Element <button type="button" data-role="proceed-to-checkout" title="Proceed to Checkout" class="action primary checkout">...</button> is not clickable at point (1228, 609). Other element would receive the click: <div class="ea-content">...</div>
+  (Session info: chrome=126.0.6478.182)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0287ba3cf2499cb346c7184c1eb228a3, clickElement {id=f.A0A386F3048AF6B160C31000F885EB16.d.BFB2896C4C003C33CDA5AAA97703F2FC.e.1682}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.182, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\RAHEEM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51123/devtoo..., se:cdpVersion: 126.0.6478.182, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0287ba3cf2499cb346c7184c1eb228a3)] -> xpath: //button[@data-role='proceed-to-checkout']]
+Session ID: 0287ba3cf2499cb346c7184c1eb228a3
+at org.testng.Assert.fail(Assert.java:111)
+at group_Of_TestCases.groups.verifyProceedToCheckout(groups.java:602)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProceedToCheckout -->
+        <test-method is-config="true" signature="close_Browser()[pri:0, instance:group_Of_TestCases.groups@5e2c3d18]" started-at="2024-07-19T11:46:40 IST" name="close_Browser" finished-at="2024-07-19T11:46:55 IST" duration-ms="14616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_Browser -->
+      </class> <!-- group_Of_TestCases.groups -->
+    </test> <!-- Test -->
+  </suite> <!-- Smoke groups -->
+</testng-results>
